@@ -114,6 +114,10 @@ nav.active{
     color: var(--txt);
 }
 
+.last{
+    margin-bottom: 10px;
+}
+
 /* General Styling */
 .quiz-container{
     h2{
@@ -397,7 +401,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 20px;
+    padding: 5px;
     background-color: #333;
     color: white;
 }
@@ -405,6 +409,7 @@ footer {
 footer p {
     font-size: 1em;
     margin: 0;
+    text-align: center;
 }
 
 

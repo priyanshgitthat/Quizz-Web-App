@@ -58,7 +58,7 @@ document.getElementById('start-quiz').addEventListener('click', async () => {
         const response = await fetch(`https://opentdb.com/api.php?amount=20&category=${categoryId}&difficulty=${selectedDifficulty}&type=multiple`);
 
         if (!response.ok) {
-            throw new Error('Failed to fetch quiz data');
+            throw new Error('Failed to fetch quiz data please try again');
         }
 
         // Parse the JSON response
