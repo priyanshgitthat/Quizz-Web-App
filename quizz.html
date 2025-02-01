@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>your quizz</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <a href="./index.html">
+            think<span class="txt-color">unique</span>
+        </a>
+        <nav>
+            <a href="./index.html">home</a>
+            <a href="./about.html">about</a>
+        </nav>
+        <button>
+            <i class="fa fa-bars" aria-hidden="true" id="menu-btn"></i>
+        </button>
+    </header>
+
+
+    <div class="quiz-container">
+        <h2>Quiz <span id="selected-subject">Starts</span></h2>
+    
+        <div class="difficulty-container">
+            <label for="difficulty">Select Difficulty Level:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+        <button id="start-quiz">Start Quiz</button>
+
+        <div id="quiz-container">
+
+        </div>
+    
+
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+</html>
