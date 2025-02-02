@@ -79,7 +79,7 @@ document.getElementById('start-quiz').addEventListener('click', async () => {
                     
                     const questionTitle = document.createElement('h3');
                     questionTitle.textContent = `${index + 1}. ${question.question}`;
-                    questionTitle.style.color="#f3bc77";
+                    questionTitle.style.color="#FFFFFF";
                     questionBox.appendChild(questionTitle);
                     
                     const optionsContainer = document.createElement('div');
@@ -148,7 +148,7 @@ document.getElementById('start-quiz').addEventListener('click', async () => {
     // Create and display the score on the page
              const userScore = document.createElement('h2');
              userScore.classList.add('user-score')
-             userScore.style.color="#f3bc77";
+             userScore.style.color="#FFFFFF";
             userScore.textContent = `Your score is: ${score} / ${data.results.length}`;
              quizContainer.appendChild(userScore);
                 // alert(`Your score is: ${score} / ${data.results.length}`);

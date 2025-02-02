@@ -23,10 +23,10 @@
     --small: 1.4rem; /* 14px */
 
     /* ----------- Color Schemes -------------- */
-    --dark: #1d1716;
-    --mid: #402a23;
-    --txt: #e27147;
-    --txt-light: #f3bc77;
+    --dark: #4B0082;    /* Dark Purple */
+    --mid: #800080;     /* Purple */
+    --txt: #FFFFFF;     /* White */
+    --txt-light: #D8BFD8; /* Light Purple (Lavender) */
   }
 
 
@@ -97,9 +97,8 @@ nav.active{
     text-align: center;
 }
 
-
 .user-score{
-    background-color: var(--mid);
+    background-color: #800080;
     color: var(--txt-light);
     font-size: var(--body);
     font-weight: 900;
@@ -260,13 +259,13 @@ h3.error {
 .sub-box {
     width: 40%;
     min-width: 320px;
-    background-color: #f3bc77; /* Customize background color */
+    background-color: var(--mid); /* Customize background color */
     padding: 2rem;
     text-align: center;
     font-size: var(--h3);
     text-transform: capitalize;
     font-weight: 700;
-    color: var(--dark); /* Responsive font size based on the root variable */
+    color: var(--txt-light); /* Responsive font size based on the root variable */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
