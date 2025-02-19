@@ -22,12 +22,37 @@
     --body: 1.8rem; /* 18px */
     --small: 1.4rem; /* 14px */
 
-    /* ----------- Color Schemes -------------- */
-    --dark: #4B0082;    /* Dark Purple */
-    --mid: #800080;     /* Purple */
-    --txt: #FFFFFF;     /* White */
-    --txt-light: #D8BFD8; /* Light Purple (Lavender) */
-  }
+/* ----------- Color Schemes -------------- */
+--dark: #5C4033;    /* Dark Brown */
+--mid: #6F4E37;     /* Coffee Brown */
+--txt: #FFFFFF;     /* White */
+--txt-light: #F5F5DC; /* Beige */
+
+}
+
+body{
+    position: relative;
+    min-height: 91dvh;
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+.bg-background{
+    position: absolute;
+    right: 0;
+    top: 5.5rem;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid red; */
+    z-index: -1;
+
+    video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(50%);
+        object-position: center;
+    }
+}
 
 
   /* -------------------- header ------------------- */
@@ -37,12 +62,14 @@
 }
 
 header{
-    background-color: var(--mid);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: .5em 1.5em;
     min-height: 4.6rem;
+    background-color:rgba(228, 76, 6, 0.233);
+    backdrop-filter: blur(2.6rem);
+    text-shadow: 0 0 8px white;
 
     a{
         /* border: 2px solid white; */
@@ -259,7 +286,10 @@ h3.error {
 .sub-box {
     width: 40%;
     min-width: 320px;
-    background-color: var(--mid); /* Customize background color */
+    /* background-color: var(--mid); Customize background color */
+    background-color:rgba(228, 76, 6, 0.233);
+    backdrop-filter: blur(2.6rem);
+    text-shadow: 0 0 8px white;
     padding: 2rem;
     text-align: center;
     font-size: var(--h3);
@@ -267,9 +297,10 @@ h3.error {
     font-weight: 700;
     color: var(--txt-light); /* Responsive font size based on the root variable */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.178);
     transition: transform 0.3s ease;
     cursor: pointer;
+    border: .3px solid rgba(255, 255, 255, 0.322);
 }
 
 .sub-box:hover {
