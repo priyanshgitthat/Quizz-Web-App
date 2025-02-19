@@ -149,7 +149,7 @@ nav.active{
     h2{
         font-size: var(--h2);
         font-weight: 800;
-        color: var(--dark);
+        color: var(--txt-light);
         padding: .2em 5%;
     }
 
